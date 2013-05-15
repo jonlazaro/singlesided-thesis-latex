@@ -6,7 +6,8 @@
 %: Style file for Latex
 % Most style definitions are in the external file PhDthesisPSnPDF.
 % In this template package, it can be found in ./Latex/Classes/
-\documentclass[twoside,12pt]{Latex/Classes/PhDthesisPSnPDF}
+%\documentclass[twoside,12pt]{Latex/Classes/PhDthesisPSnPDF}
+\documentclass[oneside,12pt]{Latex/Classes/PhDthesisPSnPDF}
 
 %\usepackage[lined, boxed]{algorithm2e} % for algorithm figures creation.
 
@@ -23,14 +24,13 @@
 % below is to generate the title page with crest and author name
 
 % Title of the dissertation
-\newcommand{\thesistitle}{Eine neue Bestimmung der Moleküldimensionen:
-A New Determination of Molecular Dimensions}
+\newcommand{\thesistitle}{Nuevo enfoque para la fusión de Linked Data basado en la evaluación de la calidad de los datos}
 
 %Author name
-\newcommand{\authorname}{Albert Einstein}
+\newcommand{\authorname}{Jon Lázaro Aduna}
 
 %First advisor name
-\newcommand{\advisorname}{Dr. Alfred Kleiner}
+\newcommand{\advisorname}{Dr. Diego López-de-Ipiña González-de-Artaza}
 
 % if output to PDF then put the following in PDF header
 \ifpdf
@@ -50,10 +50,10 @@ A New Determination of Molecular Dimensions}
 % Full logo
 %\crest{\includegraphics[width=6cm]{UDeusto}}
 \university{Universidad de Deusto}
-\degree{Tesis doctoral presentada por }
+\degree{}
 \author{\authorname} 
-\collegeordept{dentro del Programa de Doctorado en Física Experimental}
-\textadvisor{Dirigida por el }
+\collegeordept{jlazaro@deusto.es}
+\textadvisor{Supervisor: }
 \advisor{\advisorname}
 \advisortwo{}
 \textsignaturecandidate{El doctorando}
@@ -95,7 +95,7 @@ A New Determination of Molecular Dimensions}
 \maketitle  % command to print the title page with above variables
 
 % Title back
-\include{0_frontmatter/title_back}
+%\include{0_frontmatter/title_back}
 
 
 %: ----------------------- abstract ------------------------
@@ -116,11 +116,11 @@ A New Determination of Molecular Dimensions}
 %: ----------------------- tie in front matter ------------------------
 
 % The frontmatter text starts here
-\frontmatter
+%\frontmatter
 
-\include{0_frontmatter/dedication}
-\include{0_frontmatter/abstract}
-\include{0_frontmatter/acknowledgement}
+%\include{0_frontmatter/dedication}
+%\include{0_frontmatter/abstract}
+%\include{0_frontmatter/acknowledgement}
 
 % As abstract contains various languages we set the main language again
 \selectlanguage{spanish}
@@ -138,7 +138,7 @@ A New Determination of Molecular Dimensions}
 %\ subsection*{Preface}
 %\addcontentsline{toc}{subsection}{Preface} 
 
-\cleardoublepage
+%\cleardoublepage
 \pdfbookmark[0]{\contentsname}{toc}
 \tableofcontents            % print the table of contents
 							% levels are:
@@ -155,13 +155,13 @@ A New Determination of Molecular Dimensions}
 
 % Tie in external source file for definitions: /0_frontmatter/glossary.tex
 % Glossary entries can also be defined in the main text. See glossary.tex
-\include{0_frontmatter/glossary}
+%\include{0_frontmatter/glossary}
 
 %\begin{multicols}{2} % \begin{multicols}{#columns}[header text][space]
 %\begin{footnotesize} % scriptsize(7) < footnotesize(8) < small (9) < normal (10)
 
-\printnomenclature[1.5cm] % [] = distance between entry and description
-\label{sec:glossary} % target name for links to glossary
+%\printnomenclature[1.5cm] % [] = distance between entry and description
+%\label{sec:glossary} % target name for links to glossary
 
 %\end{footnotesize}
 %\end{multicols}
@@ -184,8 +184,10 @@ A New Determination of Molecular Dimensions}
 % care that the paths match. You can also change the order of appearance by
 % moving the include commands.
 
-\include{1_introduction/0_index}	
-\include{2_another_chapter/0_index}
+\include{1_introduccion/0_index}	
+\include{2_revision_bibliografica/0_index}
+\include{3_marco_investigacion/0_index}
+\include{4_metodologia/0_index}
 	
 
 % --------------------------------------------------------------
@@ -267,6 +269,6 @@ A New Determination of Molecular Dimensions}
 
 
 %: back pages
-\include{9_backmatter/back}
+%\include{9_backmatter/back}
 
 \end{document}
