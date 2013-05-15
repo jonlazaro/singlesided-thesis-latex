@@ -647,7 +647,7 @@
 }%
 
 \renewcommand{\frontmatter}{%
-%\cleardoublepage
+\cleardoublepage
 \pagestyle{fancy}
 \pagenumbering{roman}
 \selecttitleformat{\chaptername}
@@ -657,7 +657,7 @@
 %:-------------------------- mainmatter text layout -----------------------
 
 \renewcommand{\mainmatter}{%
-%\cleardoublepage
+\cleardoublepage
 \raggedbottom %default is \flushbottom
 \pagestyle{fancy}
 \pagenumbering{arabic}
@@ -667,7 +667,7 @@
 %:-------------------------- backmatter text layout -----------------------
 
 \renewcommand{\backmatter}{%
-%\cleardoublepage
+\cleardoublepage
 \raggedbottom
 \pagestyle{fancy}
 \selecttitleformat{\appendixname}
