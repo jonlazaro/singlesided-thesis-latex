@@ -250,6 +250,8 @@
 % avoid hyphenation locally
 \usepackage{hyphenat}
 
+\usepackage{pgfgantt}
+
 
 % Line break directly after paragraph title
 % http://www.latex-community.org/forum/viewtopic.php?f=5&t=1383
