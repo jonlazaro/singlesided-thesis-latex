@@ -1,0 +1,43 @@
+%!TEX root = ../document.tex
+
+\section{Diagrama de Gantt}
+\label{sec:gantt}
+
+En el último apartado del presente documento, y después de haber descrito las diferentes fases del trabajo, se incluye un cronograma en el que se puede visualizar una estimación de la duración de cada una de estas fases a lo largo de 3 años: \\
+
+\begin{figure}[htbp]
+	\noindent\resizebox{\textwidth}{!}{
+		\begin{ganttchart}[hgrid, vgrid]{36}
+			\gantttitle{2012}{4}
+			\gantttitle{2013}{12} 
+			\gantttitle{2014}{12}
+			\gantttitle{2015}{8} \\
+			\gantttitlelist{9,...,12}{1}
+			\gantttitlelist{1,...,12}{1}
+			\gantttitlelist{1,...,12}{1}
+			\gantttitlelist{1,...,8}{1} \\
+
+			\ganttgroup{Fase I}{1}{28} \\
+				\ganttbar{Tarea I.1}{1}{1} \\
+				\ganttbar{Tarea I.2}{1}{2} \\
+				\ganttbar{Tarea I.3}{3}{7} \\
+				\ganttbar{Tarea I.4}{8}{28} \\
+			\ganttgroup{Fase II}{8}{8} \\
+				\ganttbar{Tarea II.1}{8}{8} \\
+				\ganttbar{Tarea II.2}{8}{8} \\
+				\ganttbar{Tarea II.3}{8}{8} \\
+			\ganttgroup{Fase III}{9}{28} \\
+				\ganttbar{Tarea III.1}{9}{9} \\
+				\ganttbar{Tarea III.2}{10}{13} \\
+				\ganttbar{Tarea III.3}{14}{15} \\
+				\ganttbar{Tarea III.4}{16}{18} \\
+				\ganttbar{Tarea III.5}{19}{24} \\
+				\ganttbar{Tarea III.6}{25}{28} \\
+			\ganttgroup{Fase IV}{25}{36} \\
+				\ganttbar{Tarea IV.1}{25}{25} \\
+				\ganttbar{Tarea IV.2}{25}{26} \\
+				\ganttbar{Tarea IV.3}{27}{36}
+		\end{ganttchart}
+	}
+	\caption{Diagrama de Gantt}
+\end{figure}
